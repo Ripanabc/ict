@@ -17,7 +17,7 @@ let h = memory.getContext('2d');
 memory.width = canvas.width;
 memory.height = canvas.height;
 
-g.lineWidth = 3;
+g.lineWidth = 5;
 g.lineJoin = 'round';
 g.lineCap = 'round';
 g.strokeStyle = '#331414DD';
