@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<style>
+
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes rotate-reverse {
+	100% {
+		transform: rotate(-1turn);
+	}
+}
+
+.rainbow {
+	position: relative;
+	z-index: 0;
+	width: 300px;
+	height: 155px;
+	border-radius: 1px;
+	overflow: hidden;
+	padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 150;
+  font-size: 80px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #2abe52;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: 
+      linear-gradient(#4fe978, #229240),
+      linear-gradient(#f5c651, #d49a07),
+      linear-gradient(#d53e33, #d53e33), 
+      linear-gradient(#508cfa, #1048b1);
+		animation: rotate 4s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 10px;
+		top: 10px;
+		width: calc(100% - 20px);
+		height: calc(100% - 20px);
+		background: white;
+		border-radius: 5px;
+	}
+
+  &:hover {
+    &::before {
+      animation-name: rotate-reverse;
+    }
+  }
+}
+</style>
+</head>
+<body>
+<div class="rainbow">
+<a href="https://docs.google.com/forms/d/1ODj7MEowYjjjw-nWy7MbSLYfDuhc4RtL2pi3ou8MnJk/edit?usp=drivesdk&ouid=100646865150739091046&chromeless=1" ><b>Exam-1</b></a></div><br><br>
+<div class="rainbow">
+<a href="https://docs.google.com/forms/d/1Fz-6xLN4HO0UZ8S-mLnoHR-cvBRgcKfS6nbrNEfsYdQ/edit?chromeless=1" ><b>Exam-2</b></a></div><br>
+<div class="rainbow">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdEFVIx7AvXyQcDwAHq_2XOIYO3UiKRLN0viFb-UR7119fMBQ/viewform?usp=preview" ><b>Number</b></a></div><br>
+<div class="rainbow">
+<a href="https://docs.google.com/forms/u/1/d/1bIjCTVoAxMOl5NPdELYJNvCbSyk0ETTXhw_Bkl2kiOo/edit?chromeless=1" ><b>HTML-4</b></a></div><br>
+<div class="rainbow">
+<a href="    " ><b>C-5</b></a></div><br>
+<div class="rainbow">
+<a href="      " ><b>Exam-6</b></a></div><br>
+
+</body>
+</html>
