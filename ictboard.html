@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffff81;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSejJyWyWIfEMcI0eO45ARhE9Wa3k3SOFq9K7s00eMgrYai-jg/viewform?usp=preview">Number System</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSejJyWyWIfEMcI0eO45ARhE9Wa3k3SOFq9K7s00eMgrYai-jg/viewform?usp=preview">Digital Device</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdea8MaFtqIOej3NZe2nC5jbEiOSe_tf0zFKUMCwS9khSFEeg/viewform?usp=preview">Web design</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPFG4H4xMTT_Cl1M3pMwE6oR83uAVytP24LBUxahLbo_dL0A/viewform?usp=preview">C Coading</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdCTYdcZRGOwXi7JEQht9hCZ7eyfqjvxz0FmzasOsQNZBmyKQ/viewform?usp=preview">Database Management System</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+<h1><font color="red">Dgital Device</font></h1>
+<p>1.<b> রূপান্তর:</b><br>যে কোন সমীকরন,সত্যক সারণী,লজিক সার্কিট একে অন্যের সাথে রূপান্তর কর |<br>
+2. উপরের 1 নং প্রশ্ন থেকে প্রাপ্ত সমীকরণকে NAND বা NOR গেইটের সাহায্যে বাস্তবায়ন কর|<br>
+3.দুটি হাফ এ্যডার যোগের মাধ্যমে একটি ফুল এ্যডার বাস্তবায়ন সম্ভব কিনা ব্যাখ্যা কর|<br>
+	<a href="         "><h1><font color="red">video</font></h1></a><br>
+	
+4.NAND ও NOR গেইটের সার্বজনীনতা প্রমাণ কর|<br>
+5.এনকোডার ও ডিকোডার ব্যাখ্যা কর|<br>
+6. সত্যক সারণীর সাহায্যে ডি-মরগ্যানের উপপাদ্য দুটি প্রমাণ কর | <br></p>
+<a href="https://ripanabc.github.io/ict/truth.html"><h1><font color="red">উত্তর</font></h1></a>
+<p>7.নিম্নে উল্লেখিত ঘরে   তিন চলকবিশিষ্ট NOR  গেইটের বৈদ্যুতিক সার্কিট অংকন কর|
+Now drawing:
+<a href="https://ripanabc.github.io/ict/draw1.html">click here</a><br>
+8.একটি ফ্লিপ ফ্লপ কয়টি বিট ধারন করতে পারে? <br>
+9.NOR এর আউটপুট 0 হবে যখন <br>
+a)সকল ইনপুট 0  হবে<br>
+b)সকল ইনপুট 1 হবে<br>
+c)।কোনটিই নয়<br>
+10.কোন বর্তনীর ক্ষেত্রে n সংখ্যক ইনপুটের জন্য 2<sup>n</sup>
+ সংখ্যক আউটপুট পাওয়া যায়?<br>
+11. কোন বর্তনীর ক্ষেত্রে 2 টি ইনপুটের জন্য 2টি
+ আউটপুট পাওয়া যায়?<br>
+12.কোন বর্তনীর ক্ষেত্রে 2<sup>n</sup>সংখ্যক ইনপুটের জন্য n
+ সংখ্যক আউটপুট পাওয়া যায়?<br>
+13.কোন বর্তনীর ক্ষেত্রে 2 এর অধিক ইনপুটের জন্য 2 টি
+আউটপুট পাওয়া যায়?<br>
+14. কোন বর্তনীর ক্ষেত্রে 1 টি  ইনপুটের জন্য  1 
+ আউটপুট পাওয়া যায়?<br>
+ 15.XOR gate কয় ধরনের মৌলিক গেইট এর সমন্বয়ে গঠিত? <br>
+16. XOR gate কয়টি মৌলিক গেইট এর সমন্বয়ে গঠিত?  <br>
+ 17.XNOR gate কয়টি মৌলিক গেইট এর সমন্বয়ে গঠিত?<br>
+ 18.1টি full adder কয়টি half adder নিয়ে গঠীত? <br>
+19.  1টি হাফ এ্যডার কয়টি মৌলিক গেইট এর সমন্বয়ে গঠিত. <br>XOR gate কয় ধরনের মৌলিক গেইট এর সমন্বয়ে গঠিত. <br>
+20.বাইনারি যোগের জন্য  কোন বর্তনী ব্যবহার  করা হয়? <br>
+
+	21.A,B,C,D চলকবিশিষ্ট X-OR gate এর output এ 1 হলে input এ A="1", B="1",
+ হলে C ও D এর মান কত হবে? <br>
+22.উভয় input 1 হলে  output 0 হয় কোন কোন গেইটের ক্ষেত্রে ? <br>
+23.<table border="1" width="500" height="480">
+<tr> <td>A</td><td>B</td><td>X</td></tr>
+<tr><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>1</td></tr>
+<tr><td>1</td><td>1</td><td>0</td></tr>
+</table><br>
+output X এর  সমীকরণ লিখ।<br>
+24.23 নং প্রশ্নের সমীকরণটির লজিক সার্কিট অংকন কর। <br>
+25.NAND gate কে NOT gate এর ভিতর দিয়ে চালনা করলে output এ কোন গেইট পাওয়া যায়? <br>
+26.Half Adder ও Full Adder এর ব্লকচিত্র অংকন কর। <br>
+27.A‌+BC= (A+B)(A+C) কোন ধরনের উপপাদ্য। <br>
+28.A+A'=1 কেন হয় ব্যাখ্যা কর।<br>
+29.যে লজিক বর্তনী আলফানিউমেরিক ক্যারেক্টরকে বাইনারি কোডে  রূপান্তর করে তাকে কি বলে? <br>
+30.সকল মাইক্রো কম্পিউটারে ইংরেজি বর্ণকে অন্তর্ভুক্ত করা যায় কোন কোড দ্বারা? <br>
+31.মৌলিক উপপাদ্য কোনগুলো?<br>
+	
+</p>
+</div>
+<img src="device.jpg" width="1000"><br>
+	
+	.ওয়েবসাইটের একক ঠিকানা কোনটি?<br>. ব্রাউজারের সময় বাঁচে কোন ট্যাগে? <br>
+.যে ওয়েবপেজে ডেটার মান পরিবর্তন করা যায় না তাকে কোন ধরনের ওয়েবপেজ বলে?<br>
+.ডায়নামিক  জন্য ব্যবহা.ওয়েবসাইটের একক ঠিকানা কোনটি?<br>. ব্রাউজারের সময় বাঁচে কোন ট্যাগে? <br>
+.যে ওয়েবপেজে ডেটারর করা তিনটি  ভাষার নাম লিখ.<br>
+
+   
+</body>
+</html> 
